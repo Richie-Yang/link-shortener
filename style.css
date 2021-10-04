@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #293747;
+}
+
+.main-shorten-section, .footer-content {
+  /* outline: 1px solid tomato; */
+  color: whitesmoke;
+  background-color:#1a242e;
+  box-shadow: -5px 8px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.main-shorten-section {
+  position: relative;
+  z-index: 1;
+  height: 300px;
+  margin-top: 15vh;
+  padding: 20px;
+  border: .15rem solid #24313f;
+  border-radius: .5rem;
+}
+
+.invalid-feedback {
+  position: relative;
+}
+
+.main-copy-section {
+  position: relative;
+  z-index: 0;
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 0 0 .5rem .5rem;
+  background-color: rgba(255, 255, 255, 0.096);
+  box-shadow: -5px 8px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  opacity: 0;
+  transition: transform .5s, opacity .5s;
+  transform: rotate(-90deg) scale(0);
+  transform-origin: top left;
+}
+
+.main-copy-section form h6 {
+  color: whitesmoke;
+}
+
+.main-copy-section form button {
+  opacity: .9;
+}
+
+/* .main-shorten-section:hover ~ .main-copy-section {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+} */
+
+footer {
+  position: fixed;
+  bottom: -75px;
+  height: 150px;
+  transition: bottom .5s;
+}
+
+footer:hover {
+  bottom: 0px;
+}
+
+.footer-content {
+  height: 100%;
+  margin: 0 10vw;
+  padding: 15px;
+  border-top: .15rem solid #24313f;
+  border-left: .15rem solid #24313f;
+  border-right: .15rem solid #24313f;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.footer-arrow-signs .fa-chevron-down:nth-child(2) {
+  position: relative;
+  top: -10px;
+}
+
+.footer-social-links {
+  font-size: 1.5rem;
+}
+
+.footer-social-links .fab {
+  margin: 0 5px;
+}
+
+.main-shorten-section h1 span, #footer-link-facebook {
+  color: lightskyblue;
+}
+
+.main-shorten-section .fa-search, #footer-link-github {
+  color: aqua;
+}
+
+.main-shorten-section h1, #footer-link-medium {
+  color: aquamarine;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    margin: 0 20vw;
+  }
+}

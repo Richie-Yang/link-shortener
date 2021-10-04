@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <title>LinkShort</title>
+</head>
+<body>
+  <!-- main -->
+  <main class="container">
+    <!-- Shorten Section for input -->
+    <section class="main-shorten-section">
+      <h1><span>Link</span><i class="fas fa-search"></i>Short</h1>
+      <h6 class="mt-4">
+        The tool which not just getting your link shorter, it makes every link to be branded with your domain. 
+        <span class="text-danger"> ( DEMO USE ONLY )</span>
+      </h6>
+      <form id="main-shorten-form" class="needs-validation mt-4" novalidate>
+        <input id="main-shorten-input" class="form-control" type="search" placeholder="Paste your URL here" aria-label="Search">
+        <h6 class="invalid-feedback">Please input valid URL!</h6>
+        <button id="main-shorten-button" class="btn btn-outline-success w-100 mt-3 mb-4" type="submit">Shorten</button>
+      </form>
+    </section>
+
+    <!-- Copy Section for result -->
+    <section class="main-copy-section">
+      <form>
+        <h6>COPY YOUR SHORT LINK HERE!</h6>
+        <div class="input-group mt-3">
+          <input id="main-copy-input" class="form-control" type="search" placeholder="Result" aria-label="Search" disabled>
+          <span class="input-group-text" id="basic-addon2">
+            <button id="main-copy-button" class="btn" data-clipboard-target="#main-copy-input">
+              <img src="https://clipboardjs.com/assets/images/clippy.svg" alt="Copy to clipboard" width="20">
+            </button>
+          </span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="container-fluid">
+    <div class="footer-content">
+      <h5>Made by Richie with <i class="fas fa-heart"></i></h5>
+      <div class="footer-arrow-signs d-flex flex-column justify-content-center">
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="footer-social-links">
+        <a id="footer-link-facebook" href="https://www.facebook.com/yian.yang1" target='_blank'><i class="fab fa-facebook"></i></a>
+        <a id="footer-link-github" href="https://github.com/Richie-Yang" target='_blank'><i class="fab fa-github"></i></a>
+        <a id="footer-link-medium" href="https://medium.com/@richieyianyang" target='_blank'><i class="fab fa-medium"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
